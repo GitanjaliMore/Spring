@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- namespace from spring 5 documentation pdf-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+  https://www.springframework.org/schema/beans/spring-beans.xsd">
+  
+  <bean id="samosa" class="springlifecycle.Samosa" scope="prototype" init-method="init" destroy-method="destroy"> 
+  <property name="price" value="25"></property>
+  </bean>
+</beans>

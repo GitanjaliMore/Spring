@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- namespace from spring 5 documentation pdf-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+  https://www.springframework.org/schema/beans/spring-beans.xsd">
+  
+  <bean id="empobj" class="spring.Employee"> 
+  
+  <property name="employeeName" value="Gitanjali"></property>
+  
+  <property name="phones">
+  <list>
+  <value>9797969696</value>
+  <value>7798969696</value>
+  </list>
+  </property>
+  
+  <property name="address">
+  <set>
+  <value>Lucknow</value>
+  <value>Delhi</value>
+  <value>Bangalore</value>
+  </set>
+  
+  </property>
+  <property name="courses">
+  <map>
+  <entry key="Java" value="2 months"></entry>
+  <entry key="Testing" value=" 1 months"></entry>
+  <entry key="Python" value="3 months"></entry>
+  </map>
+  </property>
+ 
+  </bean>
+  
+</beans>
